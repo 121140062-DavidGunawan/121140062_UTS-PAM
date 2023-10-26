@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="github">Github Username</string>
+    <string name="NIM">NIM</string>
+    <string name="Email">Email</string>
+    <string name="pw">Password</string>
+    <string name="noaccount">"Don't have an account?"</string>
+    <string name="sign_up_underline"><u>Sign Up</u></string>
+    <string name="dashboard">Dashboard</string>
+    <string name="profile">Profile</string>
+    <string name="search">Search User</string>
+    <string name="AvatarView">AvatarView</string>
+    <string name="NameView">NameView</string>
+    <string name="EmailView">EmailView</string>
+    <string name="empty"></string>
+    <string name="logout">Logout</string>
+</resources>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".login.SignUp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="300dp"
+        android:layout_height="550dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="3dp"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="211dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/alata"
+                android:gravity="center"
+                android:text="@string/sign_up"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/input_username"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittext_bg"
+                android:elevation="3dp"
+                android:ems="10"
+                android:fontFamily="@font/alata"
+                android:hint="@string/username"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="text"
+                android:padding="13dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_bg"
+                android:elevation="3dp"
+                android:ems="10"
+                android:fontFamily="@font/alata"
+                android:hint="@string/pw"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="textPassword"
+
+                android:padding="13dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_username" />
+
+            <EditText
+                android:id="@+id/input_github"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_bg"
+                android:elevation="3dp"
+                android:ems="10"
+                android:fontFamily="@font/alata"
+                android:hint="@string/github"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="text"
+                android:padding="13dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_password" />
+
+            <EditText
+                android:id="@+id/input_nim"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_bg"
+                android:elevation="3dp"
+                android:ems="10"
+                android:fontFamily="@font/alata"
+                android:hint="@string/NIM"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="number"
+                android:padding="13dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_github" />
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_bg"
+                android:elevation="3dp"
+                android:ems="10"
+                android:fontFamily="@font/alata"
+                android:hint="@string/Email"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="textEmailAddress"
+                android:padding="13dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_nim" />
+
+            <Button
+                android:id="@+id/sign_up_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:backgroundTint="@color/cream"
+                android:elevation="3dp"
+                android:fontFamily="@font/alata"
+                android:text="@string/sign_up"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_email"
+                app:layout_constraintVertical_bias="0.5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
